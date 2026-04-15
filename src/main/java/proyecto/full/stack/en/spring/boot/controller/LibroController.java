@@ -27,7 +27,7 @@ public class LibroController {
     @PostMapping
     public void guardar(@RequestBody Libro l) { service.agregar(l); }
 
-    @GetMapping
+    @GetMapping("/autor/{nombre}")
     public List<Libro> filtrar(@PathVariable String nombre) { 
         return service.buscarPorAutor(nombre); 
     }

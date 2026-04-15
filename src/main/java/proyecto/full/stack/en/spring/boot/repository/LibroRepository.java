@@ -10,4 +10,8 @@ public class LibroRepository {
     private List<Libro> libros = new ArrayList<>();
 
 
+    public List<Libro> obtenerTodos() { return libros; }
+    public void guardar(Libro l) { libros.add(l); }
+
+
 }
